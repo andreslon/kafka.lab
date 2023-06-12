@@ -399,3 +399,5 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/apps/java/java.kafka.producer/target/
+/apps/java/java.kafka.consumer/target/
