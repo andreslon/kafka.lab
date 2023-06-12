@@ -11,9 +11,9 @@ producer = KafkaProducer(bootstrap_servers=bootstrap_servers)
 topic = 'lab-topic'
 message_counter = 0
 while True:
-    message = f"Mensaje {message_counter}"
+    message = f"Mensaje enviado desde python {message_counter}"
     producer.send(topic, value=message.encode('utf-8'))
-    print(f"Mensaje enviado: {message}")
+    print(f"Mensaje enviado desde python: {message}")
     message_counter += 1
 
     # Esperar un intervalo de tiempo antes de enviar el siguiente mensaje
