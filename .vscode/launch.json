@@ -2,6 +2,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "JavaKafkaProducer",
+            "request": "launch",
+            "mainClass": "com.labs.java.kafka.producer.JavaKafkaProducer",
+            "projectName": "java.kafka.producer"
+        },
+        {
             "name": ".NET Core Launch (console)",
             "type": "coreclr",
             "request": "launch",
