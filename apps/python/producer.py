@@ -8,7 +8,7 @@ bootstrap_servers = 'localhost:9092'  # Dirección y puerto de los brokers de Ka
 producer = KafkaProducer(bootstrap_servers=bootstrap_servers)
 
 # Enviar mensajes al topic "mi-topic"
-topic = 'lab-topic'
+topic = 'topic1'
 message_counter = 0
 while True:
     message = f"Mensaje enviado desde python {message_counter}"

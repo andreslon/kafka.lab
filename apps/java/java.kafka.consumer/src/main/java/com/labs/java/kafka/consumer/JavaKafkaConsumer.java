@@ -19,7 +19,7 @@ import java.util.Properties;
  * @author Andreslon
  */
 public class JavaKafkaConsumer {
-    private static final String TOPIC_NAME = "lab-topic";
+    private static final String TOPIC_NAME = "topic1";
     private static final String BOOTSTRAP_SERVERS = "localhost:9092";
     private static final String GROUP_ID = "my-consumer-group";
 

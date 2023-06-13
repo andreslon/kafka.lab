@@ -2,7 +2,7 @@ from kafka import KafkaConsumer
 
 # Configuración del consumidor
 bootstrap_servers = 'localhost:9092'  # Dirección y puerto de los brokers de Kafka
-topic = 'lab-topic'  # Topic al que se suscribirá el consumidor
+topic = 'topic1'  # Topic al que se suscribirá el consumidor
 
 # Crear el consumidor
 consumer = KafkaConsumer(topic, bootstrap_servers=bootstrap_servers)
