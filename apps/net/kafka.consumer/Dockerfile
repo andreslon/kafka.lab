@@ -8,8 +8,10 @@ USER appuser
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY "apps/net/kafka.consumer" .
+COPY ["kafka.consumer.csproj", "./"]
 RUN dotnet restore "kafka.consumer.csproj"
+COPY . .
+WORKDIR "/src/."
 RUN dotnet build "kafka.consumer.csproj" -c Release -o /app/build
 
 FROM build AS publish

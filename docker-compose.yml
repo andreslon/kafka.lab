@@ -5,10 +5,10 @@ services:
   net-producer:
     image: net-producer
     build:
-      context: .
-      dockerfile: apps/net/kafka.producer/Dockerfile
+      context: apps/net/kafka.producer
+      dockerfile: ./Dockerfile
   net-consumer:
     image: net-consumer
     build:
-      context: .
-      dockerfile: apps/net/kafka.consumer/Dockerfile      
+      context: apps/net/kafka.consumer
+      dockerfile: ./Dockerfile      
