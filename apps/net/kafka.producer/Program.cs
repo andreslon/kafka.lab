@@ -7,7 +7,6 @@ var config = new ProducerConfig
     SaslMechanism= SaslMechanism.Plain,
     SaslUsername="NUVO7A4A3VURIXYX",
     SaslPassword="0nGK5ZhpgAZQnhyem16DSE1zGhQH/ybH81YcHTXBPS4AGdnLdie29UtSCiC8dOVC"
-    // ClientId = "my-producer"
 };
 
 using (var producer = new ProducerBuilder<Null, string>(config).Build())
@@ -30,7 +29,7 @@ using (var producer = new ProducerBuilder<Null, string>(config).Build())
         var result = deliveryReport.GetAwaiter().GetResult();
         Console.WriteLine($"Partición: {result.Partition}, Offset: {result.Offset}");
         i++;
-        await Task.Delay(TimeSpan.FromSeconds(2));
+        await Task.Delay(TimeSpan.FromSeconds(1));
     }
 
     // Asegurarse de que todos los mensajes se envíen antes de cerrar el productor

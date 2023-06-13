@@ -4,11 +4,11 @@ var config = new ConsumerConfig
 {
     // BootstrapServers = "localhost:9092", // Dirección y puerto de los brokers de Kafka
     GroupId = "consumer-group-andres",
-     BootstrapServers = "pkc-56d1g.eastus.azure.confluent.cloud:9092", // Dirección y puerto de los brokers de Kafka
-    SecurityProtocol= SecurityProtocol.SaslSsl,
-    SaslMechanism= SaslMechanism.Plain,
-    SaslUsername="NUVO7A4A3VURIXYX",
-    SaslPassword="0nGK5ZhpgAZQnhyem16DSE1zGhQH/ybH81YcHTXBPS4AGdnLdie29UtSCiC8dOVC",
+    BootstrapServers = "pkc-56d1g.eastus.azure.confluent.cloud:9092", // Dirección y puerto de los brokers de Kafka
+    SecurityProtocol = SecurityProtocol.SaslSsl,
+    SaslMechanism = SaslMechanism.Plain,
+    SaslUsername = "NUVO7A4A3VURIXYX",
+    SaslPassword = "0nGK5ZhpgAZQnhyem16DSE1zGhQH/ybH81YcHTXBPS4AGdnLdie29UtSCiC8dOVC",
     AutoOffsetReset = AutoOffsetReset.Earliest
 };
 

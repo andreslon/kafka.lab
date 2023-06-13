@@ -1,0 +1,14 @@
+
+version: '3.4'
+
+services:
+  net-producer:
+    image: net-producer
+    build:
+      context: .
+      dockerfile: apps/net/kafka.producer/Dockerfile
+  net-consumer:
+    image: net-consumer
+    build:
+      context: .
+      dockerfile: apps/net/kafka.consumer/Dockerfile      
